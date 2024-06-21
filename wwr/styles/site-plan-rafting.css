@@ -9,10 +9,10 @@
     --heading-font: 'Open Sans', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
     --callout-font: 'Oswald', sans-serif;
-    --nav-bg-color: var(--primary-color);
+    --nav-background-color: var(--primary-color);
     --nav-link-color: #ffffff;
     --nav-hover-link-color: var(--secondary-color);
-    --nav-hover-bg-color: var(--accent1-color);
+    --nav-hover-background-color: var(--accent1-color);
 }
 
 
@@ -32,6 +32,7 @@ header {
     text-align: center;
 }
 
+
 h1,
 h2,
 h3,
@@ -49,7 +50,7 @@ p {
 
 
 nav {
-    background-color: var(--nav-bg-color);
+    background-color: var(--nav-background-color);
     padding: 10px;
     text-align: center;
 }
@@ -61,7 +62,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--nav-hover-bg-color);
+    background-color: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
     padding: 5px;
 }
@@ -80,7 +81,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-
 
 header img {
     max-width: 200px;
