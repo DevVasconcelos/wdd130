@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap');
 
+
 :root {
     --primary-color: #396e94;
     --secondary-color: #e7c24f;
@@ -14,6 +15,7 @@
     --nav-hover-bg-color: var(--accent1-color);
 }
 
+
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
@@ -22,10 +24,6 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
 
 header {
     background-color: var(--primary-color);
@@ -34,9 +32,21 @@ header {
     text-align: center;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+
 p {
     padding: 10px 0;
 }
+
 
 nav {
     background-color: var(--nav-bg-color);
@@ -50,16 +60,29 @@ nav a {
     margin: 0 15px;
 }
 
-nav a:link {
-    color: var(--nav-link-color);
-}
-
-nav a:visited {
-    color: var(--nav-link-color);
-}
-
 nav a:hover {
     background-color: var(--nav-hover-bg-color);
     color: var(--nav-hover-link-color);
     padding: 5px;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+header img {
+    max-width: 200px;
+    height: auto;
 }
