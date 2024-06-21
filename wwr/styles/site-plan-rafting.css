@@ -61,11 +61,17 @@ nav a {
     margin: 0 15px;
 }
 
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
 nav a:hover {
     background-color: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
     padding: 5px;
 }
+
 
 
 footer {
