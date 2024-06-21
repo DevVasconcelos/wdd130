@@ -36,6 +36,12 @@ h1 {
     margin-bottom: 20px; /* Example margin */
 }
 
+h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-top: 30px; /* Example margin */
+}
+
 p {
     padding: 10px 0;
 }
