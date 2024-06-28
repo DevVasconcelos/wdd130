@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -15,19 +21,21 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: center;
+    display: block;
+    padding: 10px;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
+    color: white;
+    padding: 10px;
+    display: block;
 }
 
-nav a:hover {
-    text-decoration: underline;
+h1 {
+    color: steelblue;
+    padding: .5rem;
 }
+
 
 main {
     flex: 1;
@@ -39,23 +47,32 @@ main {
 
 main img {
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 200px;
     width: 150px;
+    padding: 2px;
+    border: 1px solid steelblue;
+    box-shadow: 0 0 30px gray;
     height: auto;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 aside {
-    width: 80%;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: #f9f9f9;
-    color: #333;
+    width: 20em;
+    text-align: center;
+    position: relative;
 }
 
 aside img {
     width: 200px;
     height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 60px;
+    left: 63px;
+    font-size: medium;
 }
 
 footer {
@@ -71,7 +88,7 @@ p {
     padding: 0;
 }
 
-/* Responsividade */
+
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
@@ -89,3 +106,19 @@ p {
         width: 100%;
     }
 }
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1) ;
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+    align-content: center;
+    
+}
+
+ul {
+    text-align: left;
+}
+
