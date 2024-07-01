@@ -59,6 +59,30 @@ nav a:hover {
     border-radius: 5px;
 }
 
+.hero article {
+    position: absolute;
+    top: 70%; /* Adjust as needed for spacing */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left; /* Adjust text alignment as needed */
+    max-width: 600px; /* Adjust width as needed */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.hero article img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    float: right;
+}
+
+.hero article p {
+    color: white;
+}
+
 main {
     max-width: 1200px;
     margin: 0 auto;
