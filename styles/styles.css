@@ -16,9 +16,8 @@ body {
 
 header {
     width: 100%;
+    margin: 0 auto;
     max-width: 840px;
-    margin-left: auto;
-    margin-right: auto;
     background: steelblue;
     color: #fff;
     display: flex;
@@ -54,8 +53,7 @@ h1 {
 .grid {
     display: grid;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     max-width: 840px
 }
 
@@ -105,8 +103,7 @@ footer {
     border-top: 1px solid black;
     justify-content: space-between;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     max-width: 840px;
 }
 
