@@ -15,9 +15,9 @@ body {
 }
 
 header {
-    width: 100%;
     margin: 0 auto;
     max-width: 840px;
+    width: 100%;
     background: steelblue;
     color: #fff;
     display: flex;
@@ -51,10 +51,10 @@ h1 {
 }
 
 .grid {
+    margin: 0 auto;
+    max-width: 840px;
     display: grid;
     align-items: center;
-    margin: 0 auto;
-    max-width: 840px
 }
 
 main {
@@ -95,6 +95,8 @@ aside h2 {
 }
 
 footer {
+    margin: 0 auto;
+    max-width: 840px;
     background: none;
     color: #000;
     text-align: center;
@@ -103,8 +105,6 @@ footer {
     border-top: 1px solid black;
     justify-content: space-between;
     width: 100%;
-    margin: 0 auto;
-    max-width: 840px;
 }
 
 p {
