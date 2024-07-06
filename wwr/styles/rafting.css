@@ -16,18 +16,19 @@ body {
 }
  
 header, footer {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 10px;
 }
 
 header {
     background-color: var(--primary-color);
     color: white;
-    padding: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
 }
 
 header img {
@@ -36,98 +37,54 @@ header img {
 
 nav {
     display: flex;
-    justify-content: center;
 }
 
 nav a {
-    position: relative;
     color: white;
     text-decoration: none;
     margin: 0 15px;
+    position: relative;
 }
 
 nav a::before {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     width: 0%;
-    height: 2.5px;
+    height: 2px;
     background-color: rgb(63, 108, 154);
-    transition: width 0.1s; 
+    transition: width 0.3s ease;
 }
 
 nav a:hover::before {
     width: 100%;
 }
 
-.hero {
-    position: relative;
-    text-align: center;
+.main {
+    padding: 0 20px;
 }
 
-.hero img {
-    width: 200px;
-    height: 150px;
-    display: block;
-    border-radius: 10px;
-    float: right;
-    margin-left: 20px;
+.hero {
+    text-align: center;
+    padding: 20px;
 }
 
 .client {
-    text-align: center;
-    display: flex; 
-    align-items: center; 
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #9bf2dcac;
-    padding: 1px;
+    padding: 20px;
     border-radius: 10px;
+    margin-top: 20px;
 }
-
 
 .client img {
     width: 200px;
     height: 150px;
-    display: flex;
     border-radius: 10px;
-    float: right;
-    position: relative;
-    left: 80%;
-}
-
-
-.client p {
-    margin-top: 10px;
-}
-
-.hero h1 {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.hero article {
-    position: absolute;
-    top: 70%; 
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: left; 
-    max-width: 600px; 
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-}
-
-.hero article img {
-    width: 150px;
-    height: auto;
     margin-right: 20px;
-    border-radius: 5px;
-    float: right;
 }
 
 .history-content {
@@ -145,76 +102,65 @@ nav a:hover::before {
 .history-content .text-left,
 .history-content .text-right {
     flex: 1;
-    max-height: 150px; 
-    overflow: hidden; 
-    margin: 0 10px;
-}
-
-.history-content .image {
-    display: flex;
-    align-items: center;
+    max-width: 300px;
 }
 
 .history-content img {
-    width: 200px;
-    height: 150px;
+    width: 100%;
     border-radius: 10px;
 }
 
-.main {
-    padding: 0 20px;
-}
-
-
 section {
-    margin-bottom: 20px;
     background-color: #bbdefb;
-    margin-top: 10px;
-    padding: 10px;
-    width: 1200px;
-    position: relative;
-    left: 149.3px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
 }
 
 section h2 {
-    margin-bottom: 30px;
-    color: var(--primary-color);
     text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
 }
 
-section img {
-    height: 150px;
-    width: 200px;
+.adventure-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.adventure-images figure {
+    text-align: center;
     margin: 10px;
-    border-radius: 10px;
 }
 
-section p {
-    margin-top: 10px;
+.adventure-images img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
 }
 
 footer {
     background-color: var(--secondary-color);
     color: white;
-    padding: 10px;
-    text-align: right;
-}
-
-footer p {
-    margin: 15px 0;
     text-align: center;
-    position: relative;
-    top: 22px;
+    padding: 10px;
 }
 
-footer a {
-    margin: 0 10px;
+footer .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
 }
 
-footer img {
+footer .social-icons .social-icon {
+    margin-left: 10px;
+}
+
+footer .social-icons img {
     width: 30px;
     height: 30px;
-    position: relative;
-    bottom: 15px;
-    right: 50px;
+    border-radius: 50%;
 }
