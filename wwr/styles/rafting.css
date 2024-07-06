@@ -16,19 +16,18 @@ body {
 }
  
 header, footer {
-    width: 100%;
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 header {
     background-color: var(--primary-color);
     color: white;
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 10px 20px;
 }
 
 header img {
@@ -37,54 +36,98 @@ header img {
 
 nav {
     display: flex;
+    justify-content: center;
 }
 
 nav a {
+    position: relative;
     color: white;
     text-decoration: none;
     margin: 0 15px;
-    position: relative;
 }
 
 nav a::before {
     content: '';
     position: absolute;
-    bottom: -2px;
+    bottom: 0;
     left: 0;
     width: 0%;
-    height: 2px;
+    height: 2.5px;
     background-color: rgb(63, 108, 154);
-    transition: width 0.3s ease;
+    transition: width 0.1s; 
 }
 
 nav a:hover::before {
     width: 100%;
 }
 
-.main {
-    padding: 0 20px;
+.hero {
+    position: relative;
+    text-align: center;
 }
 
-.hero {
-    text-align: center;
-    padding: 20px;
+.hero img {
+    width: 200px;
+    height: 150px;
+    display: block;
+    border-radius: 10px;
+    float: right;
+    margin-left: 20px;
 }
 
 .client {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    margin-top: 10px;
     background-color: #9bf2dcac;
-    padding: 20px;
+    padding: 1px;
     border-radius: 10px;
-    margin-top: 20px;
 }
+
 
 .client img {
     width: 200px;
     height: 150px;
+    display: flex;
     border-radius: 10px;
+    float: right;
+    position: relative;
+    left: 80%;
+}
+
+
+.client p {
+    margin-top: 10px;
+}
+
+.hero h1 {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero article {
+    position: absolute;
+    top: 70%; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left; 
+    max-width: 600px; 
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.hero article img {
+    width: 150px;
+    height: auto;
     margin-right: 20px;
+    border-radius: 5px;
+    float: right;
 }
 
 .history-content {
@@ -102,65 +145,76 @@ nav a:hover::before {
 .history-content .text-left,
 .history-content .text-right {
     flex: 1;
-    max-width: 300px;
+    max-height: 150px; 
+    overflow: hidden; 
+    margin: 0 10px;
+}
+
+.history-content .image {
+    display: flex;
+    align-items: center;
 }
 
 .history-content img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-section {
-    background-color: #bbdefb;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1200px;
-    border-radius: 10px;
-}
-
-section h2 {
-    text-align: center;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-}
-
-.adventure-images {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.adventure-images figure {
-    text-align: center;
-    margin: 10px;
-}
-
-.adventure-images img {
     width: 200px;
     height: 150px;
     border-radius: 10px;
 }
 
-footer {
-    background-color: var(--secondary-color);
-    color: white;
-    text-align: center;
-    padding: 10px;
+.main {
+    padding: 0 20px;
 }
 
-footer .social-icons {
-    display: flex;
-    justify-content: flex-end;
+
+section {
+    margin-bottom: 20px;
+    background-color: #bbdefb;
+    margin-top: 10px;
+    padding: 10px;
+    width: 1200px;
+    position: relative;
+    left: 149.3px;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+section img {
+    height: 150px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+section p {
     margin-top: 10px;
 }
 
-footer .social-icons .social-icon {
-    margin-left: 10px;
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    text-align: right;
 }
 
-footer .social-icons img {
+footer p {
+    margin: 15px 0;
+    text-align: center;
+    position: relative;
+    top: 22px;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer img {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+    position: relative;
+    bottom: 15px;
+    right: 50px;
 }
