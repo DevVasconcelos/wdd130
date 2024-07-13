@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #469de0;
+    --secondary-color: #469de0;
+    --font-color: #333333;
+    --bg-color: #f5f5f5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--font-color);
+    background-color: var(--bg-color);
+}
+
+header,
+footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+header img {
+    max-height: 140px;
+    position: relative;
+    left: 120%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    left: 20%;
+    font-size: large;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2.5px;
+    background-color: whitesmoke;
+    transition: width 0.1s;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.main {
+    padding: 0 20px;
+}
+
+.contact-info,
+.contact-form,
+.team-profiles {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h1,
+.contact-form h2,
+.team-profiles h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info p,
+.contact-info address,
+.team-profiles figcaption {
+    text-align: center;
+}
+
+.contact-info address p {
+    margin: 5px 0;
+}
+
+.map-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.team-profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.profile {
+    text-align: center;
+    margin: 10px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.radio-group {
+    margin-bottom: 20px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-item input[type="radio"] {
+    margin-right: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.contact-form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+footer p {
+    margin: 15px 0;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 15px;
+    right: 50px;
+}
